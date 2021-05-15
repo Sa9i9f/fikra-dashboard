@@ -1,0 +1,98 @@
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  /* background-color: bisque; */
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.loginPageContainer {
+  /* background: blueviolet; */
+  display: flex;
+  height: 100%;
+  width: 100%;
+  width: calc(100% - 70px);
+  justify-content: space-between;
+}
+.loginPageSection {
+  display: flex;
+  /* background-color: yellowgreen; */
+  flex-basis: calc(50% - 20px);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loginpageDivider {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+}
+.loginPageLogo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.loginPageLogoImage {
+  width: 72px;
+  height: auto;
+}
+.loginPageLogoText {
+  font-size: 1.875em;
+  font-weight: 300;
+  margin: 10px;
+  margin: 0;
+}
+.loginPageCopyright {
+  font-family: "Tahoma";
+  color: #c8c8c8;
+  font-weight: 300;
+}
+.loginPageCopyright {
+  color: grey;
+}
+.loginPagepromo {
+  font-weight: 600;
+  font-size: 2.25rem;
+  max-width: 12.5rem;
+  margin: 0;
+  line-height: 1;
+}
+.loginpageBackground {
+  background-image: url("../assets/background.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  height: 60px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+  margin-bottom: 20px;
+  transition: all 330ms ease-in-out;
+  /* For firefox */
+  font-size: 1rem;
+  /* For safari to view the whole placeholder */
+  line-height: 1;
+  user-select: auto;
+  /* For firefox fixing the inability to select text */
+  -moz-user-select: auto;
+  /* For safar fixing the inability to input text */
+  -webkit-user-select: auto;
+}
+button {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+:checked + label::before {
+  border-color: #000;
+  background-color: #000;
+}
