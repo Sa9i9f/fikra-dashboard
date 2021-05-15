@@ -1,8 +1,12 @@
 import react from "react";
 import classes from "./Login.module.css";
 import logo from "../assets/logo.svg";
+import { Redirect } from "react-router";
 
 export default function Login() {
+  const renderDashboard = () => {
+    fetch("http://localhost:8888/dashboard").then(() => console.log("hello"));
+  };
   return (
     <section className={classes.loginPage}>
       <div className={classes.loginPageContainer}>
@@ -19,7 +23,9 @@ export default function Login() {
               <input type="text" value="admin" />
               <label for="">password</label>
               <input type="password" value="admin123" />
-              <button>Login</button>
+              <button onClick={renderDashboard} formMethod="POST">
+                Login
+              </button>
               <input type="checkbox" name="Remember" />
               <label for="Remember">Remember me</label>
             </div>

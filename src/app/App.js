@@ -8,6 +8,14 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/dashboard">
+          <div className="content-wrapper">
+            <div className="sidebar-container">
+              <Sidebar />
+            </div>
+          </div>
+        </Route>
+
         <Route path="/">
           <Login />
         </Route>
